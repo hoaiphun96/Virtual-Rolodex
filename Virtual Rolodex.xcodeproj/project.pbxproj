@@ -12,6 +12,9 @@
 		EAA43DD4202A345A002BF063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA43DD2202A345A002BF063 /* Main.storyboard */; };
 		EAA43DD6202A345A002BF063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA43DD5202A345A002BF063 /* Assets.xcassets */; };
 		EAA43DD9202A345A002BF063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA43DD7202A345A002BF063 /* LaunchScreen.storyboard */; };
+		EAA43DE1202A3489002BF063 /* CardData .json in Resources */ = {isa = PBXBuildFile; fileRef = EAA43DE0202A3489002BF063 /* CardData .json */; };
+		EAA43DE3202A34B5002BF063 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA43DE2202A34B5002BF063 /* Model.swift */; };
+		EAA43DE5202A354B002BF063 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA43DE4202A354B002BF063 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EAA43DD5202A345A002BF063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA43DD8202A345A002BF063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAA43DDA202A345A002BF063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA43DE0202A3489002BF063 /* CardData .json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "CardData .json"; sourceTree = "<group>"; };
+		EAA43DE2202A34B5002BF063 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EAA43DE4202A354B002BF063 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				EAA43DD5202A345A002BF063 /* Assets.xcassets */,
 				EAA43DD7202A345A002BF063 /* LaunchScreen.storyboard */,
 				EAA43DDA202A345A002BF063 /* Info.plist */,
+				EAA43DE0202A3489002BF063 /* CardData .json */,
+				EAA43DE2202A34B5002BF063 /* Model.swift */,
+				EAA43DE4202A354B002BF063 /* Card.swift */,
 			);
 			path = "Virtual Rolodex";
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			files = (
 				EAA43DD9202A345A002BF063 /* LaunchScreen.storyboard in Resources */,
 				EAA43DD6202A345A002BF063 /* Assets.xcassets in Resources */,
+				EAA43DE1202A3489002BF063 /* CardData .json in Resources */,
 				EAA43DD4202A345A002BF063 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA43DE3202A34B5002BF063 /* Model.swift in Sources */,
 				EAA43DD1202A345A002BF063 /* ViewController.swift in Sources */,
 				EAA43DCF202A345A002BF063 /* AppDelegate.swift in Sources */,
+				EAA43DE5202A354B002BF063 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8UXD77547;
 				INFOPLIST_FILE = "Virtual Rolodex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.JamieNguyen.Virtual-Rolodex";
@@ -289,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A8UXD77547;
 				INFOPLIST_FILE = "Virtual Rolodex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.JamieNguyen.Virtual-Rolodex";
