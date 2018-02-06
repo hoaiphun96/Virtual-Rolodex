@@ -10,5 +10,4 @@ import Foundation
 
 class Model: NSObject {
     static var sharedInstance = [Card]()
-    
 }
