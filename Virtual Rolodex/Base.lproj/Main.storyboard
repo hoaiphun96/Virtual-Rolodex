@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VUL-he-MaB">
-                                <rect key="frame" x="112" y="120" width="150" height="150"/>
+                                <rect key="frame" x="112" y="40" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="81W-j3-L9F"/>
                                     <constraint firstAttribute="height" constant="150" id="z1Y-qT-Kxe"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tso-Wx-lE7">
-                                <rect key="frame" x="37" y="278" width="300" height="205"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tso-Wx-lE7">
+                                <rect key="frame" x="37" y="198" width="300" height="123"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gZR-ei-WOt">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="102.5"/>
@@ -83,8 +83,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-cJ-pNi" userLabel="Bio">
-                                        <rect key="frame" x="0.0" y="102.5" width="300" height="102.5"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-cJ-pNi" userLabel="Bio">
+                                        <rect key="frame" x="0.0" y="102.5" width="300" height="20.5"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="bFT-56-vDz"/>
@@ -98,7 +98,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VUL-he-MaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="T5L-wt-XrK"/>
+                            <constraint firstItem="VUL-he-MaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="T5L-wt-XrK"/>
                             <constraint firstItem="tso-Wx-lE7" firstAttribute="top" secondItem="VUL-he-MaB" secondAttribute="bottom" constant="8" symbolic="YES" id="aJ9-qK-2dT"/>
                             <constraint firstItem="VUL-he-MaB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eMb-Q0-12V"/>
                             <constraint firstItem="VUL-he-MaB" firstAttribute="centerX" secondItem="tso-Wx-lE7" secondAttribute="centerX" id="gQT-mP-iZH"/>
