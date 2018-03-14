@@ -10,14 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var lastNameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var companyLabel: UILabel!
-    @IBOutlet weak var startingDateLabel: UILabel!
-    @IBOutlet weak var bioLabel: UILabel!
-    
+    @IBOutlet weak var infoLabel: UILabel!
+
     var currentCardIndex: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +70,8 @@ class ViewController: UIViewController {
             if errorString == nil {
                 DispatchQueue.main.async {
                     self?.avatarImageView.image = UIImage(data: data!)
-                    self?.firstNameLabel.text = "First name: \(newCard.firstName!)\n\nLast Name: \(newCard.lastName!)\n\nEmail: \(newCard.email!)\n\nCompany: \(newCard.company!)\n\nStart Date: \(newCard.startDate!)\n\nBio: \(newCard.bio!)"
+                    self?.nameLabel.text = newCard.firstName + " " + newCard.lastName
+                    self?.infoLabel.text = "Email:\n\(newCard.email!)\n\nCompany:\n\(newCard.company!)\n\nStart Date:\n\(newCard.startDate!.prefix(10))\n\nBio:\n\(newCard.bio!)"
                 }
             }
         })
