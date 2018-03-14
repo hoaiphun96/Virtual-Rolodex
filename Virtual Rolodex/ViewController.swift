@@ -24,15 +24,11 @@ class ViewController: UIViewController {
         //load Data into Model
         currentCardIndex = UserDefaults.standard.integer(forKey: "currentIndex")
         Card.loadCards()
-        UIConfig()
+  
         loadNewCard()
         setUpSwipeRecognizer()
     }
     
-    func UIConfig() {
-        bioLabel.sizeToFit()
-       
-    }
     func setUpSwipeRecognizer(){
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swiped(gesture:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -78,15 +74,11 @@ class ViewController: UIViewController {
             if errorString == nil {
                 DispatchQueue.main.async {
                     self?.avatarImageView.image = UIImage(data: data!)
+                    self?.firstNameLabel.text = "First name: \(newCard.firstName!)\n\nLast Name: \(newCard.lastName!)\n\nEmail: \(newCard.email!)\n\nCompany: \(newCard.company!)\n\nStart Date: \(newCard.startDate!)\n\nBio: \(newCard.bio!)"
                 }
             }
         })
-        firstNameLabel.text = newCard.firstName!
-        lastNameLabel.text = newCard.lastName!
-        emailLabel.text = newCard.email!
-        companyLabel.text = newCard.company!
-        startingDateLabel.text = newCard.startDate!
-        bioLabel.text = newCard.bio!
+
        
     }
 
