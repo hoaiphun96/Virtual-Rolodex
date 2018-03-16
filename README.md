@@ -14,10 +14,9 @@ Virtual Rolodex allows the user to
 
  ## Keywords
 - Swift
-- Udacity
 - Model View Controller
-- Gesture Recognizer
-- Data Persistence
+- Gesture Recognizer-
+- UIKit
 - Grand Central Dispatch
 - JSON
 
